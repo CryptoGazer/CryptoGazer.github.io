@@ -45,8 +45,8 @@ bot.onText(/\/start(.+)?/, async (msg, match) => {
                         {
                             text: "Запустить игру!",
                             web_app: {
-                                url: "https://cryptogazer.github.io/"
-                                // url: "https://www.bisiness.store/"
+                                // url: "https://cryptogazer.github.io/"
+                                url: "https://www.bisiness.store/"
                                 // url: "https://revenkroz.github.io/telegram-web-app-bot-example/index.html"
                                 // url: "https://web-app-marketing-game.onrender.com/",
                             },
