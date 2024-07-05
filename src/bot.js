@@ -1,9 +1,7 @@
 // require('dotenv').config();
 
 const TelegramBot = require("node-telegram-bot-api");
-// const token = process.env.BOT_TOKEN;
-const token = "7297312440:AAFTXp8EfMF9sDynBlvxS_3Vy26ahmb5-h8";
-// console.log(token)
+const token = process.env.BOT_TOKEN;
 const bot = new TelegramBot(token, { polling: true });
 const db = require("./server/database/dbController.js");
 
@@ -47,7 +45,8 @@ bot.onText(/\/start(.+)?/, async (msg, match) => {
                         {
                             text: "Запустить игру!",
                             web_app: {
-                                url: "https://www.bisiness.store/"
+                                url: "https://cryptogazer.github.io/"
+                                // url: "https://www.bisiness.store/"
                                 // url: "https://revenkroz.github.io/telegram-web-app-bot-example/index.html"
                                 // url: "https://web-app-marketing-game.onrender.com/",
                             },
